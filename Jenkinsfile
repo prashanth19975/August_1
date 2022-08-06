@@ -7,6 +7,6 @@ node{
     stage(" Maven Clean validate compile test Package"){
     }
      stage ("BuildDocker image"){
-          sh "docker build -t prashanth19975/java-web-app:${buildNumber}"
+          sh "docker build -t prashanth19975/java-web-app:${buildNumber} ." 
     }      
 }
